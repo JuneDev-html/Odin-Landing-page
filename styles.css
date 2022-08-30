@@ -1,0 +1,27 @@
+body{
+    background-color: white;
+}
+.header {
+    background-color: #1F2937;
+}
+
+.hero {
+    background-color: #1F2937;
+}
+
+.main-banner {
+    background-color: white;
+}
+
+.quote-banner {
+    background-color: #E5E7EB;
+
+}
+
+.action-banner {
+    background-color: #3882F6;
+}
+
+footer {
+    background-color: #1F2937;
+}
