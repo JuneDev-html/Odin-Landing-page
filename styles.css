@@ -94,19 +94,56 @@ button {
 }
 
 /* ---- ---- MAIN BANNER ---- ---- */
+
+/* align content with flex content and center it */
 .main-banner {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
+/* add margin-top so there is some space above */
 .main-header {
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
+    margin-top: 24px;
 }
+
+/* align the cards in a row with flex */
+/* add flex-wrap to them */
+/* add margin so they never touch edges */
+.cards {
+    flex: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 32px;
+}
+
+/* flex 0 so the block with content doesnt change */
+.block {
+    flex: 0;
+    text-align: center; 
+    padding: 8px;
+}
+
+/* style card border and size where image would be */
+.card {
+    border: solid #3882F6;
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+}
+
 
 .card-text {
     font-size: 18px;
-    
+
 }
 
 /* ---- ---- QUOTE BANNER ---- ---- */
