@@ -4,22 +4,36 @@ body{
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
 }
 
 /* ---- ---- HEADER ---- ---- */
 .header {
     background-color: #1F2937;
+    
+    display: flex;
+    align-items: center;
+    
 }
 
 .logo {
     font-size: 24px;
     color: #F9FAF8;
     font-weight: 600;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
 }
 
 ul { 
     list-style-type: none;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 a, 
