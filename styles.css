@@ -35,7 +35,7 @@ ul {
     gap: 16px;
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: start;
 }
 
 a, 
@@ -54,6 +54,7 @@ a,
     justify-content: center;
     align-items: center;
     gap: 8px;
+    flex-wrap: wrap;
 }
 
 .hero-left {
@@ -62,7 +63,8 @@ a,
     flex-direction: column;
     justify-content: center;
     padding: 30px;
-    padding-left: 100px;
+    padding-left: 0px;
+    margin-left: 100px;
 }
 
 .hero-title {
@@ -73,12 +75,14 @@ a,
 }
 
 .img {
-    
     flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
 }
 
 img {
-    width: 300px;
+    width: 320px;
 }
 
 button {
