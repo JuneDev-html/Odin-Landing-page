@@ -54,7 +54,7 @@ a,
     justify-content: center;
     align-items: center;
     gap: 8px;
-    flex-wrap: wrap;
+    
 }
 
 .hero-left {
@@ -121,8 +121,8 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     margin: 32px;
+    flex-wrap: wrap;
 }
 
 /* flex 0 so the block with content doesnt change */
@@ -134,10 +134,12 @@ button {
 
 /* style card border and size where image would be */
 .card {
+    /* flex-basis: 50px; */
     border: solid #3882F6;
     border-radius: 20px;
     width: 150px;
     height: 150px;
+    
 }
 
 
@@ -147,30 +149,79 @@ button {
 }
 
 /* ---- ---- QUOTE BANNER ---- ---- */
+
+/* removed hero wrap */
+ /* flex inside container */
 .quote-banner {
     background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* align items with flex column */
+.quote-block {
+    flex-basis: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px 100px;
+    margin: 32px;
+}
+
 
 .quote {
     font-size: 36px;
     font-style: italic;
     font-weight: 100;
     color: #1F2937;
+    margin-bottom: 0px;
 }
 
+/* align author on right, remove top margin */
 .author {
+    margin-top: 0px;
+    align-self: end;
     font-weight: 800;
 }
 
 /* ---- ---- ACTION BANNER ---- ---- */
 .action-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.action-block {
     background-color: #3882F6;
+    display: flex;
+    border-radius: 10px;
 }
 
 .action-text {
+    flex: 1;
     color: #E5E7EB;
     font-size: 16px;
+    margin: 32px 96px;
+
 }
+
+.action-title {
+    margin: 0px;
+    font-weight: 600;
+    align-self: start;
+}
+
+.action-instruction {
+    margin: 0px;
+}
+
+.signup {
+    margin: 16px;
+}
+
+
 
 /* ---- ---- FOOTER ---- ---- */
 footer {
